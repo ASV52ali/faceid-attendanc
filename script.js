@@ -13,12 +13,6 @@ navigator.mediaDevices.getUserMedia({ video: true })
 .catch(err => status.innerText = "دوربین فعال نشد");
 
 // ثبت حضور
-btn.onclick = () => {
-    const name = nameInput.value.trim();
-    if (!name) {
-        status.innerText = "لطفا نام خود را وارد کنید";
-        return;
-    }
 
     status.innerText = "در حال ثبت حضور...";
 
